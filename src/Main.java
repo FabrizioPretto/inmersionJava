@@ -32,7 +32,7 @@ public class Main {
             System.out.println("Película Retro que vale la pena ver");
         }
        
-
+        //hacer con while
         for (int i = 0; i < 3; i++) {
             Scanner teclado = new Scanner(System.in);
             System.out.println("Ingresa la nota que le darías a Matrix: ");
