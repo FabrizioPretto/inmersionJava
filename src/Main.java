@@ -1,49 +1,27 @@
 package src;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-        //System.out.println("Película Matrix");
+        // Movie matrixMovie = new Movie();
 
-        int fechaDeLanzamiento = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnElPlanBasico = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-                La mejor película del fin del milenio
-                """;
+        // matrixMovie.setName("Matrix");
+        // matrixMovie.setDurationTimeInMinutes(120);
+        // matrixMovie.setReleaseDate(1999);
 
-        System.out.println("Película: " + nombre);
-        System.out.println(sinopsis);
+        // matrixMovie.showTechnicFile();
 
-        System.out.println(fechaDeLanzamiento);
-        System.out.println(evaluacion);
-        System.out.println(incluidoEnElPlanBasico);
 
-        double mediaEvaluacion = (5 + 4 + 3.5) / 3;
-        double mediaEvaluacionUsuario = 0;
-        System.out.println("Media de la evaluación de Matrix: " + mediaEvaluacion);
+        // Serie friends = new Serie();
 
-        if (fechaDeLanzamiento >= 2023) {
-            System.out.println("Película Popular en el momento");
-        }else{
-            System.out.println("Película Retro que vale la pena ver");
-        }
-       
-        //hacer con while
-        for (int i = 0; i < 3; i++) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("Ingresa la nota que le darías a Matrix: ");
-             
-                double notaMatrix = teclado.nextDouble();
-                mediaEvaluacionUsuario = (mediaEvaluacionUsuario + notaMatrix);
-            
-            
-        }
-        System.out.println("La media de la película " + 
-        "Matrix calculada por el usuario es: " + mediaEvaluacionUsuario / 3);
+        // friends.setName("Friends");
+        // friends.setReleaseDate(1994);
+        // friends.setSeasons(10);
+        // friends.setSeasonsEpisodes(24);
+        // friends.setEpisodesMinutesDuration(20);
+        // friends.showTechnicFile();
+
+        Principal principal = new Principal();
+        principal.showMenu();
     }
 }
 
